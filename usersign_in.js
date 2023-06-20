@@ -7,8 +7,8 @@ router.get('/', async (req,res)=>{
 
     var seelct = 'select count(*) from users';
     var result = await dbq.dbQuery(seelct)   
-    console.log(result);
-    const response = {"Status" : "Success", "Details":"wELCOME TO API SERVOCES"}
+
+    const response = {"Status" : "Success", "Details":"Welcome to API Services"}
     return  res.send(response)
 });
 
